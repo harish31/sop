@@ -1,0 +1,177 @@
+# Java Maven CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-java/ for more details
+#
+version: 2.1
+jobs:
+    build:
+        docker:
+          # specify the version you desire here
+          - image: circleci/openjdk:8u131-jdk
+        parallelism: 4
+          # Specify service dependencies here if necessary
+          # CircleCI maintains a library of pre-built images
+          # documented at https://circleci.com/docs/2.0/circleci-images/
+          # - image: circleci/postgres:9.4
+
+        working_directory: ~/repo
+
+        environment:
+          # Customize the JVM maximum heap limit
+          MAVEN_OPTS: -Xmx3200m
+
+        steps:
+          - checkout
+          
+          - run: |
+                if [[ "$CIRCLE_BRANCH" != "master" ]]
+                then
+                    text=`git log $CIRCLE_BRANCH --not origin/master --pretty=oneline --no-merges`
+                    while read -r line; do
+                        output=`echo $line|grep -i "scoop-[0-9]\|[skip ci]"`
+                        if [[ $output ]]
+                        then
+                            echo "" > /dev/null
+                        else
+                            echo $line
+                            echo "No Jira id found for atleast one of the commits"
+                            exit 1
+                        fi
+                    done \<<< "$text"
+                fi
+          # Download and cache dependencies
+          - restore_cache:
+              keys:
+              - v3-sop-dependencies-{{ checksum "pom.xml" }}
+              # fallback to using the latest cache if no exact match is found
+              - v3-sop-dependencies-
+
+          # run tests!
+          - run:
+              name: Test and Sonar Scan
+              command:  |
+                LOG_DIR=`pwd`
+                mvn -s .circleci/.circleci.settings.xml -Dlog-path=$LOG_DIR -DWeblogic.EnvName=dev integration-test sonar:sonar
+
+          - save_cache:
+              paths:
+                - ~/.m2
+              key: v3-sop-dependencies-{{ checksum "pom.xml" }}
+
+          # run tests!
+          - run:
+              name: Deploy
+              command:  |
+                if [[ -z "$RELEASE" && "${CIRCLE_BRANCH}" = "master" ]]; then
+                  mvn -s .circleci/.circleci.settings.xml -DskipTests deploy
+                fi
+          
+          - run:
+              name: Perform Maven Release
+              command:  |
+                echo "1"
+                if [[ "$CIRCLE_BRANCH" = "master" || "$CIRCLE_BRANCH" == *"HOTFIX-"* ]]
+                then
+                    ADDITIONAL_PARAMS=""
+                    if [[ "$CIRCLE_BRANCH" == *"HOTFIX-"* ]]
+                    then
+                        git config --global user.email "engg@scoperetail.com"
+                        git config --global user.name "scoperetail"
+                        RELEASE="Yes"
+                        ADDITIONAL_PARAMS="--set-upstream origin $CIRCLE_BRANCH"
+                    fi
+                    if [[ $GIT_USER_EMAIL ]]; then git config --global user.email "$GIT_USER_EMAIL" ; fi
+                    if [[ $GIT_USER_NAME ]]; then git config --global user.name "$GIT_USER_NAME" ; fi
+                    if [[ $RELEASE ]]
+                    then
+                        output=`git tag --sort=-creatordate`
+                        tag=`echo $output| awk '{ print $1 }'`
+                        # tag1=`git tag --sort=-creatordate|head -n2|tail -n1`
+                        count=`git tag|wc -l`
+                        if [[ $count -ne 0 ]]
+                        then
+                            git log --pretty=oneline $tag..$CIRCLE_BRANCH --no-merges|grep -oi "scoop-[0-9]*"| tr '[:lower:]' '[:upper:]'| sort | uniq > content.txt
+                        else
+                            git log --pretty=oneline $CIRCLE_BRANCH --no-merges|grep -oi "scoop-[0-9]*"| tr '[:lower:]' '[:upper:]'| sort | uniq > content.txt
+                        fi
+                        version=`mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version| sed -n -e '/^\[.*\]/ !{ /^[0-9]/ { p; q } }'| sed -e 's/[^0-9][^0-9]*$//'`
+                        if [[ ! -f changes.txt ]]
+                        then
+                           touch changes.txt
+                        fi
+
+                        while read -r line; do
+                            # echo $line
+                            curl  -X GET -u pratikg@xpanxion.co.in:eddJpZyadHzICIsVpGgY02E4 \
+                            -H "Content-Type: application/json" "https://scoperetail.atlassian.net/rest/api/2/issue/$line?fields=summary,status" -o jira.json -s
+                            summary=`cat jira.json|jq '.fields.summary'|cut -d "\"" -f 2`
+                            status=`cat jira.json|jq '.fields.status.name'|cut -d "\"" -f 2`
+                            echo "$line: $summary ($status)" >> jira.txt
+                        done \<<< $(<content.txt)
+                        echo $version > latests.txt
+                        sed -e 's/^/ \* /' jira.txt >> latests.txt
+                        cat latests.txt changes.txt > new_changes.txt
+                        echo "" >> new_changes.txt
+                        cat new_changes.txt > changes.txt
+                        git add changes.txt
+                        git commit -m "[skip ci] changes.txt updated"
+                        git push $ADDITIONAL_PARAMS
+                        mvn -s .circleci/.circleci.settings.xml -Darguments="-DskipTests" -B release:prepare release:perform -Dmaven.test.skip=true
+                        tag=`git describe --abbrev=0 --tags`
+                        git checkout $tag
+                        mvn -Pabs -s .circleci/.circleci.settings.xml clean deploy -Dmaven.test.skip=true
+                        #mvn -Pabs-dev2 -s .circleci/.circleci.settings.xml clean deploy -Dmaven.test.skip=true
+                        #mvn -Pabs-qa -s .circleci/.circleci.settings.xml clean deploy -Dmaven.test.skip=true
+                        #mvn -Pabs-perf -s .circleci/.circleci.settings.xml clean deploy -Dmaven.test.skip=true
+                        #mvn -Pabs-prod -s .circleci/.circleci.settings.xml clean deploy -Dmaven.test.skip=true
+                    fi
+                fi
+          
+          
+    deploy:
+        working_directory: ~/deploy
+        docker:
+          - image: ansible/ansible:ubuntu1604
+        parallelism: 4
+        environment:
+            ANSIBLE_HOST_KEY_CHECKING: no
+
+        steps:
+          # Installation
+          - run:
+              name: Install ansible
+              command: |
+                pip install ansible
+          - checkout
+
+          - run:
+              name: Clone git repo
+              command: git clone git@github.com:scoperetail/oms-playbook.git
+
+          - run:
+              name: deploy supplier order processor
+              command: |
+                cd oms-playbook/deploy-build
+                if [[ ! $ENV ]]
+                then
+                    ENV=dev
+                fi
+                if [[ -z "$VERSION" ]]; then
+                   ansible-playbook -i environments/$ENV site.yml -e "host=suppop-server"
+                else
+                   ansible-playbook -i environments/$ENV site.yml -e "host=suppop-server version=$VERSION"
+                fi
+orbs:
+  sumologic: circleci/sumologic@1.0.2
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - sumologic/workflow-collector
+      - build
+      - deploy:
+           requires:
+              - build
+           filters:
+            branches:
+              only: master

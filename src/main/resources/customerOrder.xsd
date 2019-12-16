@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="customerOrder" type="customerOrder"/>
+  <xs:complexType name="customerOrder">
+    <xs:sequence>
+      <xs:element name="orderId" type="xs:int"/>
+      <xs:element name="orderLines" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

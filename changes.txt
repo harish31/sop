@@ -1,0 +1,527 @@
+0.220
+ * SCOOP-6231: SLCR_7 # Revised scope is to add only a FO Sep checkbox/control and no basic or advanced search (Pending Deployment)
+ * SCOOP-7051: ABS#128 - Roanoke-Supplier product number is BR_ITEM_CD and not WH_ITEM_ID for Div 20 (Pending Deployment - ABS)
+ * SCOOP-7284: SLCR_16 > Part 2 : Pallet Rounding (Pending Deployment - ABS)
+ * SCOOP-7404: Pallet/Case Encrichment : Pallet/Case Qty and Container Pallet Enrichment is failing (SLCR_16) (Done)
+ * SCOOP-7405: Order Visibility : OV is not getting generated (Done)
+0.219
+ * SCOOP-7405: Order Visibility : OV is not getting generated (Pending Deployment)
+0.218
+ * SCOOP-7404: Pallet/Case Encrichment : Pallet/Case Qty and Container Pallet Enrichment is failing (Ready for Dev)
+0.217
+ * SCOOP-7051: ABS#128 - Roanoke-Supplier product number is BR_ITEM_CD and not WH_ITEM_ID for Div 20 (Pending Deployment)
+ * SCOOP-7284: SLCR_16 > Part 2 : Pallet Rounding (Pending Deployment)
+0.216
+ * SCOOP-7051: ABS#128 - Roanoke-Supplier product number is BR_ITEM_CD and not WH_ITEM_ID for Div 20 (Pending Deployment)
+ * SCOOP-7284: SLCR_16 > Part 2 : Pallet Rounding (Pending Deployment)
+0.215
+ * SCOOP-7313: ABS#174 -Manual Allocation - Duplicate \ (Merge Pending)
+0.214
+ * SCOOP-7277: Issues related to Manual order edit (Ready for QA)
+0.213
+ * SCOOP-7277: Issues related to Manual order edit (Pending Deployment)
+0.212
+ * SCOOP-7251: ABS#160 - Product substitution report screen throws service error when searching  with certain filter criteria (Pending Deployment)
+ * SCOOP-7413: null (null)
+0.211
+ * SCOOP-7189: ABS#139 - Process date change not showing up in Change Log (Pending Deployment)
+0.210
+ * SCOOP-6624: ABS# 70 - Manage Order : Records are not getting displayed as per \ (Pending Deployment)
+ * SCOOP-6815: ABS#94 - INC5141747 # - Reports > Product Substitutions - Pagination is not working properly in Product Substitution screen (Pending Deployment)
+ * SCOOP-7217: ABS#155 - Allocation Review screen showing “Scheduled” status for the inactive schedule id. (Pending Deployment)
+ * SCOOP-7246: ABS # - Bulk Update - Delivery date is Non mandatory (Reported by Tushar) (Pending Deployment)
+0.209
+ * SCOOP-6810: ABS#116 - SeaFood XML is created, if order status is manually changes from \ (Pending Deployment)
+ * SCOOP-6968: INC5109309 - Order#100451 - Stuck in Ready To Release. (Reported by Tushar) (Pending Deployment)
+0.208
+ * SCOOP-6920: TOG association : While retrieving Tog Association, Customer division id is passed in the API, instead of Supplier division id  (Pending Deployment)
+0.207
+ * SCOOP-6699: DEVOPS # 3 - Send OV Message via Terminator (Pending Deployment)
+ * SCOOP-6850: ABS#96 - Auto Allocation or Manual Allocation algorithm, should never allocate more quantity than the original demand (Pending Deployment)
+ * SCOOP-7102: Inbound Schedule - Regular order goes on \ (Pending Deployment)
+0.206
+ * SCOOP-5224: INC5086172 : Values are getting updated and no change reason is logged in the change log (Pending Deployment)
+ * SCOOP-6987: Bulk Order Update : Orders are moving to Prep Release Backout queue when Orders status is Changed from \ (Pending Deployment)
+ * SCOOP-6988: INC5085608/ABS#123: Product line should be \ (Pending Deployment)
+0.205
+ * SCOOP-6885: Fix changes.txt (In Progress)
+0.190
+ * SCOOP-6754: Seafood XML are not generated if order are moved \ (Pending Deployment)
+0.189
+ * SCOOP-6625: specific build version deployment on env (Done)
+ * SCOOP-6701: SLCR_61 - Outbound Message, changes in adjustment complex type (Pending Deployment)
+0.188
+ * SCOOP-6368: SLCR_55# Part 2 # - OMS should ignore the Inbound Schedule and follow the dates that came on the order. (Pending Deployment)
+0.187
+ * SCOOP-5866: SOP build issue (Done)
+0.186
+ * SCOOP-5866: SOP build issue (Done)
+0.185
+ * SCOOP-6034: SLCR_25 # Email to person creating rush order if rush order is violating attribute rules (In Progress)
+0.184
+ * SCOOP-5866: SOP build issue (Done)
+0.150
+ * SCOOP-5856: ABS #196 - Incorrect \ (Pending Deployment)
+0.149
+ * SCOOP-5864: Order Visibility Error in Production - SDAU (Pending Deployment)
+ * SCOOP-5866: SOP build issue (In Progress)
+0.148
+ * SCOOP-5837: ABS#175, 181 - Order Visibility - The LineNbr is different in case of a COP failure (Pending Deployment)
+0.147
+ * SCOOP-5657: ABS #142 - Incorrect values of \ (Pending Deployment)
+0.146
+ * SCOOP-5744: ABS #162 - Schedule having 'RO\ (Pending Deployment)
+0.145
+ * SCOOP-5341: Level the common modules versions in SOP Allocation and x-sequencer components (Pending Deployment)
+ * SCOOP-5806: Jira authentication failure in circleci scripts (In Progress)
+0.144
+ * SCOOP-4822: Error Log: Error code are not displaying for 'Rejected' orders on 'Error Log' tab of 'Manage Order' screen though these are displaying in OV (In Progress)
+ * SCOOP-5657: ABS #142 - Incorrect values of \ (Pending Deployment)
+0.143
+ * SCOOP-5707: ABS#155: If Allowed customer type is \ (Pending Deployment)
+ * SCOOP-5729: ABS #102 - Order Visibility – Customer Order  number in the target OV table instead of the firm order number  (Pending Deployment)
+0.142
+ * SCOOP-5641: ABS#134 : Edit Order: Orderline remains active when quantity is updated to '0' for Transfer orders (Pending Deployment)
+0.141
+ * SCOOP-5487: Part 1- Technical Story - Split E44 - Divide-and-conquer (Pending Deployment)
+0.140
+ * SCOOP-5290: ABS#103 - Order Enrichment: Attribute rules are getting applied on rejected order line  (Pending Deployment)
+0.139
+ * SCOOP-5501: SLCR_37 - Ability for OMS to trigger the DA interface after the OINA and item restriction validations. (Ready for QA)
+0.138
+ * SCOOP-5501: SLCR_37 - Ability for OMS to trigger the DA interface after the OINA and item restriction validations. (Pending Deployment)
+0.137
+ * SCOOP-5584: DIT_100 - Transfer Type should be exported in Order Outbound XML (Pending Deployment)
+0.136
+ * SCOOP-5285: SLCR_33 - Ability for the ZINV DB to be able to receive Product Totals from OMS instead of EXPRES. (In Progress)
+0.135
+ * SCOOP-5330: ABS#59 - Order is not getting displayed on \ (Pending Deployment)
+0.134
+ * SCOOP-5330: ABS#59 - Order is not getting displayed on \ (In Progress)
+ * SCOOP-5462: ABS#107: Manage Order-> Orders remains in \ (Pending Deployment)
+0.133
+ * SCOOP-5462: ABS#107: Manage Order-> Orders remains in \ (Pending Deployment)
+0.132
+ * SCOOP-5250: ABS#36-Production > CAMS - The previous status for an Order is displayed in the CAMS file, even after changing the status from HOLD to Cancelled/Released For Fulfillment (Pending Deployment)
+ * SCOOP-5255: Extract Order - Zero (0) value is displayed in \ (Pending Deployment)
+ * SCOOP-5261: ABS-Production > Manage Orders - Department Filter - The \ (Pending Deployment)
+ * SCOOP-5286: ABS# : Manager Orders->The Quantity for order lines with status as \ (Pending Deployment)
+ * SCOOP-5453: ABS#DIT_52 - Part 2: The timestamp for Change Log and Error Log should be exported in OV (Pending Deployment)
+0.131
+ * SCOOP-5453: ABS#DIT_52 - Part 2: The timestamp for Change Log and Error Log should be exported in OV (Pending Deployment)
+0.130
+ * SCOOP-5287: SLCR_34 : Same Auto Allocation Start time for orders dropped at different cutoff time (Pending Deployment)
+0.129
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (Done)
+0.128
+ * SCOOP-4017: Manage orders - \ (Merge Pending)
+ * SCOOP-4862: ABS#DIT-52 - OV: nested sub missing items (Pending Deployment)
+ * SCOOP-5333: ABS# Rush orders are stuck in \ (Pending Deployment)
+0.127
+ * SCOOP-5340: ABS-Dev - An error occurred on Manage Orders while searching the orders having \ (Pending Deployment)
+0.126
+ * SCOOP-5291: devops ui for ABS (In Progress)
+0.125
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Done)
+ * SCOOP-1910: Item line is not getting cancelled from Order when User enters 'zero' under 'User Updated Quantity ' field on Allocation Review page (Done)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Done)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (Done)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4139: CR#82 - Transportation Management Enhancements   (Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (Done)
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (Done)
+ * SCOOP-4204: ABS#341 - Manage Orders-\ (Done)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Done)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Done)
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+ * SCOOP-4565: Outbound XML - Address information of Supplier is not displayed in XML. (Done)
+ * SCOOP-4640: Merge hotfix to master (Done)
+ * SCOOP-4653: [CAMS] : Hold Orders released manually from 'Manage  order' screen are not displaying in 'Extract Orders' screen. (Done)
+ * SCOOP-4665: Duplicate order: Order status changing from HOLD-->Enrichment in Progress->HOLD (Done)
+ * SCOOP-4671: ABS Reported (Integration Defect): Order Visibility Defects (Done)
+ * SCOOP-4798: PQA VM Consolidation (In Progress)
+ * SCOOP-4804: Manage Orders - \ (Done)
+ * SCOOP-4814: ABS#??? Prepare release Performance fix. (Merge Pending)
+ * SCOOP-4822: Error Log: Error code are not displaying for 'Rejected' orders on 'Error Log' tab of 'Manage Order' screen though these are displaying in OV (Blocked)
+ * SCOOP-4835: OV: OV file generated for order Released For Fulfillment also contains the error logs for the SOP created against dummy supplier for COP failures (Blocked)
+ * SCOOP-4893: Order Summary- Service Error occurs on \ (Done)
+ * SCOOP-4954: Outbound : Substitution product is shown even though no substitution is done for the original product (Done)
+ * SCOOP-5104: SOP is not getting created for an Order. (Done)
+ * SCOOP-5109: PQA2 env consolidation (In Progress)
+ * SCOOP-5187: OV - OV XML is not getting generated for orders whose status is \ (Done)
+ * SCOOP-5320: ABS # Order Visibility - OV XML is not getting generated if the linenumber from \ (Pending Deployment)
+0.124
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Done)
+ * SCOOP-1910:  Item line is not getting cancelled from Order when User enters 'zero' under 'User Updated Quantity ' field on Allocation Review page (Done)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Done)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (Done)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4139: CR#82 - Transportation Management Enhancements   (Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (Done)
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (Done)
+ * SCOOP-4204: ABS#341 - Manage Orders-\ (Done)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Done)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Done)
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+ * SCOOP-4565: Outbound XML - Address information of Supplier is not displayed in XML. (Done)
+ * SCOOP-4640: Merge hotfix to master (Done)
+ * SCOOP-4653: [CAMS] : Hold Orders released manually from 'Manage  order' screen are not displaying in 'Extract Orders' screen. (Done)
+ * SCOOP-4665: Duplicate order: Order status changing from HOLD-->Enrichment in Progress->HOLD (Pending Deployment)
+ * SCOOP-4671: ABS Reported (Integration Defect): Order Visibility Defects (Done)
+ * SCOOP-4798: PQA VM Consolidation (In Progress)
+ * SCOOP-4804: Manage Orders - \ (Done)
+ * SCOOP-4814: ABS#??? Prepare release Performance fix. (Merge Pending)
+ * SCOOP-4822: Error Log: Error code are not displaying for 'Rejected' orders on 'Error Log' tab of 'Manage Order' screen though these are displaying in OV (Blocked)
+ * SCOOP-4835: OV: OV file generated for order Released For Fulfillment also contains the error logs for the SOP created against dummy supplier for COP failures (Blocked)
+ * SCOOP-4893: Order Summary- Service Error occurs on \ (Done)
+ * SCOOP-4954: Outbound : Substitution product is shown even though no substitution is done for the original product (Done)
+ * SCOOP-5104: SOP is not getting created for an Order. (Done)
+ * SCOOP-5109: PQA2 env consolidation (In Progress)
+ * SCOOP-5187: OV - OV XML is not getting generated for orders whose status is \ (Done)
+0.123
+ * SCOOP-5187: OV - OV XML is not getting generated for orders whose status is \ (Pending Deployment)
+0.122
+ * SCOOP-5109: PQA2 env consolidation (In Progress)
+0.121
+ * SCOOP-4835: OV: OV file generated for order Released For Fulfillment also contains the error logs for the SOP created against dummy supplier for COP failures (Pending Deployment)
+0.120
+ * SCOOP-1910:  Item line is not getting cancelled from Order when User enters 'zero' under 'User Updated Quantity ' field on Allocation Review page (Pending Deployment)
+ * SCOOP-4565: Outbound XML - Address information of Supplier is not displayed in XML. (Pending Deployment)
+ * SCOOP-5109: PQA2 env consolidation (In Progress)
+0.119
+ * SCOOP-5104: SOP is not getting created for an Order. (Pending Deployment)
+0.118
+ * SCOOP-4565: Outbound XML - Address information of Supplier is not displayed in XML. (Pending Deployment)
+ * SCOOP-4653: [CAMS] : Hold Orders released manually from 'Manage  order' screen are not displaying in 'Extract Orders' screen. (Pending Deployment)
+ * SCOOP-4954: Outbound : Substitution product is shown even though no substitution is done for the original product (Pending Deployment)
+0.117
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4798: PQA VM Consolidation (In Progress)
+ * SCOOP-4893: Order Summary- Service Error occurs on \ (In Progress)
+0.116
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4671: ABS Reported (Integration Defect): Order Visibility Defects (Pending Deployment)
+ * SCOOP-4814: ABS#??? Prepare release Performance fix. (Merge Pending)
+0.115
+ * SCOOP-4822: Error Log: Error code are not displaying for 'Rejected' orders on 'Error Log' tab of 'Manage Order' screen though these are displaying in OV (Merge Pending)
+ * SCOOP-4835: OV: OV file generated for order Released For Fulfillment also contains the error logs for the SOP created against dummy supplier for COP failures (Pending Deployment)
+0.114
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Done)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Done)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (In Progress)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4139: CR#82 - Transportation Management Enhancements   (Blocked)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (In QA)
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (Done)
+ * SCOOP-4204: ABS#341 - Manage Orders-\ (Done)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Done)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Done)
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+ * SCOOP-4640: Merge hotfix to master (Done)
+ * SCOOP-4798: PQA VM Consolidation (To Do)
+ * SCOOP-4804: Manage Orders - \ (Pending Deployment)
+0.113
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Done)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Done)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (In Progress)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4139: CR#82 - Transportation Management Enhancements   (Review Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (In QA)
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (In QA)
+ * SCOOP-4204: ABS#341 - Manage Orders-\ (Pending Deployment - ABS)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Done)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Done)
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+ * SCOOP-4640: Merge hotfix to master (Done)
+ * SCOOP-4798: PQA VM Consolidation (To Do)
+0.112
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Done)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Ready for QA)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3433: CR#23- Single Order Creation - Summary Notification (In Progress)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (In QA)
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (In QA)
+ * SCOOP-4204: ABS#341 - Manage Orders-\ (Pending Deployment - ABS)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Pending Deployment - ABS)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Done)
+ * SCOOP-4344: Dev VM consolidation (Done)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+ * SCOOP-4640: Merge hotfix to master (Done)
+0.105.12
+ * SCOOP-4204: Manage Orders-\ (In Progress)
+0.105.11
+ * SCOOP-4204: Manage Orders-\ (Done)
+0.105.11
+ * SCOOP-4726: SOP - Performance Optimization / Fixes (To Do)
+0.105.10
+ * SCOOP-4670: ABS#206: Request is too large for API call with 996 lines (In Progress)
+0.105.9
+ * SCOOP-4667: ABS#206: OrderPrepReleaseTaskHandler does not handle exception gracefully as a result order is stuck in ACTIVE status (In Progress)
+0.105.8
+ * SCOOP-3992: ABS#328 > Release Schedule: 1st available active window did not get applied to order when customer belongs to multiple crg & release window is defined for all of them  (To Do)
+ * SCOOP-4613: Create Order - SOP orders are not getting created, if customer is not a part of any CRG. (In Progress)
+0.105.7
+ * SCOOP-3992: ABS#328 > Release Schedule: 1st available active window did not get applied to order when customer belongs to multiple crg & release window is defined for all of them  (In Progress)
+0.105.6
+ * SCOOP-4574: ABS Reported: Incorrect JNDI mapping for CAMS INBOUND EVENT in SOP for IS_LOCKED_FOR_EDIT update (Merge Pending)
+0.105.5
+ * SCOOP-4475: ABS #313 - RELEASED order moving to HOLD status through Edit order Screen (Merge Pending)
+0.105.4
+ * SCOOP-4443: RELEASED order moving to HOLD status through Chronos (Merge Pending)
+0.105.3
+ * SCOOP-4478: ABS#46 > OV - Order Visibility XSD review  (Pending Deployment)
+0.105.2
+ * SCOOP-4055: ABS#287 - Change Log & View Order - \ (Merge Pending)
+ * SCOOP-4442: ABS #309 Outbound XML - Incorrect Date Time Format (In Progress)
+0.105.1
+ * SCOOP-4055: ABS#287 - Change Log & View Order - \ (Pending Deployment)
+0.111
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (Pending Deployment)
+ * SCOOP-4344: Dev VM consolidation (Done)
+0.110
+ * SCOOP-4201: CR#69, 70 :: E44 - Product Rejector Enhancement (Review Done)
+0.109
+ * SCOOP-4204: Manage Orders-\ (Pending Deployment)
+0.108
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (Pending Deployment)
+ * SCOOP-3089: ABS#290 - TOG Association - \ (Ready for QA)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Ready for QA)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (Ready for QA)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment - ABS)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Pending Deployment - ABS)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Re-Open)
+ * SCOOP-4344: Dev VM consolidation (In Progress)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Done)
+0.107
+ * SCOOP-3842: Create Products and Supplier Combinations service to optimize order creation  (Pending Deployment)
+ * SCOOP-4274: OutboundXML: CreatedBy is coming as 'System' even though quantity is updated by logged-in User (Pending Deployment)
+ * SCOOP-4344: Dev VM consolidation (In Progress)
+ * SCOOP-4348: View Order - Orders with multiple product lines are getting created but only single product line is displayed on \ (Pending Deployment)
+0.106
+ * SCOOP-1031: CR#32 - Manual Allocation > Display all the customers on allocation review page including the one who has not placed the order. Allow user to change the qty and place the rush order in background (In Progress)
+ * SCOOP-3089: TOG Association - \ (Merge Pending)
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (Done)
+ * SCOOP-4112: Capture change log for MANUAL_ALLOC orders in SOP.  (Done)
+ * SCOOP-4168: CR#60,61,62 : Part-2 : Create Transfer Order for Customer and Supplier  (Pending Deployment)
+ * SCOOP-4230: ABS#Dev Integration - Substitution Complex Type Defects (Pending Deployment)
+ * SCOOP-4273: ABS#Dev Integration - OV XSD Hardening (Pending Deployment)
+0.105
+ * SCOOP-4161: Manual Allocation/Substitution & Edit Order - Service Error is displayed on the Review screen when user click on submit button (Pending Deployment)
+0.104
+ * SCOOP-3595: Order Management: Duplicate Order does not move to \ (Pending Deployment)
+ * SCOOP-4063: clear circleci cache  (Done)
+0.103
+ * SCOOP-3388: CR#14 - Manage Orders > View - Firm order# / Source order #  needed on screen (Pending Deployment)
+ * SCOOP-4096: Error Log: Error Code with severity 'Info' is getting displayed under OV (Pending Deployment)
+0.102
+ * SCOOP-4096: Error Log: Error Code with severity 'Info' is getting displayed under OV (Pending Deployment)
+0.101
+ * SCOOP-4048: ABS#254 - Change in Calculation of Case Quantity in case of UoM as \ (Pending Deployment)
+0.100
+ * SCOOP-3825: Order Visibility: OV XML is not showing Order Level and Product Level change logs when there is no 'Change Product ID' (Pending Deployment)
+ * SCOOP-4023: ABS#261 - Single Order - An \ (Pending Deployment)
+0.99
+ * SCOOP-3117: CR#52 - Nested Subs for Sub When Out (To Do)
+0.98
+ * SCOOP-3969: ABS#260 > CAMS -  File - Layout  (Pending Deployment)
+ * SCOOP-3994: Order Inbound : SOP order is not getting created when Master data is created with mandatory fields (Pending Deployment)
+0.97
+ * SCOOP-3245: The status of Orders of type REGULAR or FIRM, changes to HOLD even when Enrichment process is in progress (Pending Deployment)
+0.96
+ * SCOOP-3685: [CAMS] : After generating CAM file against particular order, that order should not be editable from 'Order Allocation'  and 'Product Cancellation' menu. (Pending Deployment)
+ * SCOOP-3894: Release Schedule: Order is going on 'Hold' even though Release Schedule is defined with specific CRG (Pending Deployment)
+0.95
+ * SCOOP-2756: COP -  when V29 fails then Error should get recorded in \ (In Progress)
+ * SCOOP-3913: March-4th - Deployment Hardening - ABS-DEV (To Do)
+ * SCOOP-3921: Manual Allocation : Service error occured with specific data in PQA2 environment (Pending Deployment)
+0.94
+ * SCOOP-3860: enable PQA2 env profile (In Progress)
+ * SCOOP-3875: Order Min/Max rule not getting applied (Pending Deployment)
+0.93
+ * SCOOP-3113: CR#9 - Change Log - Ability to record the logged-in User Id for order edits (In Progress)
+ * SCOOP-3482: OV : Division id displayed in generated xml for supplier id does not show the correct value (Merge Pending)
+ * SCOOP-3694: Performance > Order with more than 500 lines is getting saved in SOP but the transaction is getting rolled back, because of long running DB transaction (Pending Deployment)
+ * SCOOP-3810: Order Visibility: OV is not getting generated when order has error log with 'Error Code-1026' (Pending Deployment)
+0.92
+ * SCOOP-3116: CR#10 - Part#3 - Manage Order - Display the total case qty only for selected retail section code (In Progress)
+ * SCOOP-3722: CR#79 - Unplanned - OV Filter out error and change logs based on configuration before sending to order visibility outbound queue. OV doesn't need all error and change logs (In Progress)
+ * SCOOP-3768: DSD - Observations in orders after DSD changes   (Pending Deployment)
+0.91
+ * SCOOP-3426: ABS Dev - DSD Order Failure (Pending Deployment)
+0.90
+ * SCOOP-3655: Manage Orders > Edit order / Manual Allocation (qty update) is failing due to SectionIds going as null. (Pending Deployment - ABS)
+0.89
+ * SCOOP-3611: CR#78 - ABS#219 - item_unit_wt  needs to be included in order outbound message as a new field (Pending Deployment)
+0.88
+ * SCOOP-2758: E43. Status Consolidator - should be applied in Manually Edit quantity Enrichment flow as well (Pending Deployment)
+ * SCOOP-3498: OV : Change Reason in OV xml file is not showing the complete description for changeReasonDesc (Pending Deployment)
+0.87
+ * SCOOP-3452: ABS#210 & 229 - Discrepancies in outbound order message (Done)
+ * SCOOP-3479: Order Visibility: Order status changes to 'Released for Fulfillment' if the order is \ (In Progress)
+0.86
+ * SCOOP-3526: Order remains in Active status for combination: WAREHOUSE-301 WHOLESALER-352 REGULAR-101 (Pending Deployment)
+0.85
+ * SCOOP-3452: ABS#210 - Discrepancies in outbound order message (Pending Deployment)
+0.84
+ * SCOOP-3410: ABS#167 - Product / Customer Rejected Status (Pending Deployment)
+ * SCOOP-3454: Order Visibility: Message is not getting posted to Order visibility Outbound Queue in Active MQ when UOM is 'Case Pack' (Pending Deployment)
+ * SCOOP-3470: Demand Aggregation : XML data for DA and Customer list has missing data (Pending Deployment)
+0.83
+ * SCOOP-3222: CAMS to SOP Status Update to lock the orders for edit (Pending Deployment)
+ * SCOOP-3452: ABS#210 - Discrepancies in outbound order message (Pending Deployment)
+0.82
+ * SCOOP-3058: Send data to Order Visibility (Pending Deployment)
+0.81
+ * SCOOP-3024: Manage Order - Download CSV report for manage order search result (Pending Deployment)
+ * SCOOP-3058: Send data to Order Visibility (In Progress)
+0.80
+ * SCOOP-2827: ABS#164 - Auto allocation issue -  System adjusted quantity is null but Change log is still created  (Pending Deployment)
+0.79
+ * SCOOP-3157: User should be able to move ON HOLD orders to READY TO RELEASE status (In Progress)
+ * SCOOP-3261: property change for all ABS environment (In Progress)
+0.78
+ * SCOOP-3084: Renaming log file as per module (In Progress)
+ * SCOOP-3200: ABS#193- Part#2 - RUSH order must never go on hold due to qty min/max restrictions (Pending Deployment)
+0.77
+ * SCOOP-3126: Max item Qty : Incorrect message is displayed under change log for when Max Item Qty restriction is applied (Pending Deployment)
+ * SCOOP-3199: Mapping of srcOrderId field should be to the SRC_ORDER_ID field from CUSTORDER.CUSTOMER_ORDER table. (In Progress)
+0.76
+ * SCOOP-3199: Mapping of srcOrderId field should be to the SRC_ORDER_ID field from CUSTORDER.CUSTOMER_ORDER table. (In Progress)
+ * SCOOP-3200: ABS#193- Part#2 - RUSH order must never go on hold due to qty min/max restrictions (Pending Deployment)
+0.75
+ * SCOOP-3000: ABS#167 > Issue#3 - Some defects related to the order/order line not getting Rejected (Pending Deployment)
+0.74
+ * SCOOP-2744: TOGs service doesn't return any TOGs for order type RUSH (Pending Deployment)
+0.73
+ * SCOOP-3017: ABS#185 - Critical capabilities are failing and currently there is no provision to retry those (Pending Deployment)
+ * SCOOP-3142: clear circleci cache (In Progress)
+0.72
+ * SCOOP-2943: ABS#169 - Product Master Enrichment > Retail/Internet Description being displayed in UI instead of Product Description (Pending Deployment - ABS)
+ * SCOOP-3000: ABS#167 > Issue#3 - Some defects related to the order/order line not getting Rejected (Pending Deployment)
+ * SCOOP-3020: SOP log says Supplier order created successfully but there is no supplier order. (In Progress)
+0.71
+ * SCOOP-2906: ABS#183 - Product Cancellation : Total Pallets is not updated in View order page after a product is cancelled from the order (Pending Deployment)
+ * SCOOP-3000: ABS#167 > Issue#3 - Some defects related to the order/order line not getting Rejected (Re-Open)
+ * SCOOP-3031: Case Rounding and Pallet are not working on the order quantities (Pending Deployment)
+0.70
+ * SCOOP-2941: ABS#150,155,157,161 - Implement Error Log / Change Log as per the spread sheet  (Pending Deployment)
+0.69
+ * SCOOP-3000: ABS#167 > Issue#3 - Some defects related to the order/order line not getting Rejected (Pending Deployment)
+0.68
+ * SCOOP-2941: ABS#150,155,157,161 - Implement Error Log / Change Log as per the spread sheet  (Pending Deployment)
+0.67
+ * SCOOP-2851: Add support to download search result from Manage order screen as CSV (In Progress)
+ * SCOOP-2906: ABS#183 - Product Cancellation : Total Pallets is not updated in View order page after a product is cancelled from the order (Pending Deployment)
+0.66
+ * SCOOP-2815: Outbound Message - Default cutoff date to be same as process date (Pending Deployment)
+0.65
+ * SCOOP-2568: Container calculation is not working when cubic_feet_per_container is mentioned in fraction (Pending Deployment)
+ * SCOOP-2799: Auto Allocation - Enrichment status becomes 'SKIPPED_BECAUSE_DUPLICATE' when auto allocation is be applied on multiple products from same order (In Progress)
+ * SCOOP-2828: UI- Some spelling mistakes and case to be changed (In Progress)
+0.64
+ * SCOOP-2720: ABS# 149: In case of SUB_ALSO, Original Product should be  ORDERED PRODUCT & Change Product should be all SUBS product id (Pending Deployment)
+ * SCOOP-2725: ABS#150: Issues related to V44 (Pending Deployment)
+0.63
+ * SCOOP-2609: Manual Cancellation -  Quantity of the cancelled product is NOT deducted from the order totals (Pending Deployment)
+0.62
+ * SCOOP-2599: logs deletion & logging levels change (In Progress)
+ * SCOOP-2609: Manual Cancellation -  Quantity of the cancelled product is NOT deducted from the order totals (Pending Deployment)
+0.61
+ * SCOOP-2231: End to End order flow without manaul intervention (In Progress)
+0.60
+ * SCOOP-2538: When Order total quantity for a supplier exceeds the maximum order quantity set for the supplier then order should go on HOLD (Pending Deployment)
+0.59
+ * SCOOP-2527: SOP- V44 fails in some combinations   (Pending Deployment)
+0.58
+ * SCOOP-1551: Firm order - Separate indicator in outbound (In Progress)
+ * SCOOP-2231: End to End order flow without manaul intervention (In Progress)
+ * SCOOP-2390: Error log changes in enrichment for v18 (Done)
+ * SCOOP-2430: changes.txt availability via rest call (In Progress)
+ * SCOOP-2527: SOP- V44 fails in some combinations   (Pending Deployment)
+ * SCOOP-2561: Enable actuator cors for all modules (Done)
+0.57
+ * SCOOP-1805: Value displayed in ‘Pack’ field for the created order is not mapped to 'prod_supp.product_dim.pack_desc' column of SSIMS data in the back end. (Pending Deployment)
+0.56
+ * SCOOP-2249: Add summary and status of Jira issue in changes.txt (Done)
+ * SCOOP-2312: V44 : should be performed at SOP level (Blocked)
+0.55
+ * SCOOP-2376
+0.54
+ * SCOOP-1769
+ * SCOOP-1949
+ * SCOOP-2324
+0.53
+ * SCOOP-1769
+ * SCOOP-982
+0.52
+ * SCOOP-2324
+0.51
+ * SCOOP-1239
+ * SCOOP-2180
+ * SCOOP-2272
+0.50
+ * SCOOP-1988
+ * SCOOP-2007
+ * SCOOP-2008
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

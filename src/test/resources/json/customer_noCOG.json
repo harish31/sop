@@ -1,0 +1,34 @@
+{
+  "message": "Operation was successful",
+  "status": "SUCCESS",
+  "customers": [
+    {
+      "customerId": 6,
+      "divisionId": "30",
+      "customerAccId": null,
+      "fullName": "30/0006/STORE",
+      "customerStatus": null,
+      "custType": "STORE",
+      "custDunsNumbr": null,
+      "effectiveDate": null,
+      "expiryDate": null,
+      "uom": "WH_UNIT",
+      "address": {
+        "customerId": 6,
+        "addrUsagecd": "AB",
+        "address1": "200 S. 23RD",
+        "address2": "200 S. 23RD",
+        "postalCode": "MT",
+        "city": "BOZEMAN",
+        "state": "CA",
+        "countryCd": "US",
+        "latitude": 0,
+        "longitude": 0,
+        "timezonecd": "PST",
+        "phoneNmbr": "+1-209-123123",
+        "faxNmbr": "+1-209-123123"
+      },
+      "groups": []
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "message": "Operation was successful",
+  "status": "SUCCESS",
+  "customers": [
+    {
+      "customerId": 6,
+      "divisionId": "30",
+      "customerAccId": null,
+      "fullName": "30/0006/STORE",
+      "customerStatus": null,
+      "custType": "STORE",
+      "custDunsNumbr": null,
+      "effectiveDate": null,
+      "expiryDate": null,
+      "uom": "WH_UNIT",
+      "address": {
+        "customerId": 6,
+        "addrUsagecd": "AB",
+        "address1": "200 S. 23RD",
+        "address2": "200 S. 23RD",
+        "postalCode": "MT",
+        "city": "BOZEMAN",
+        "state": "CA",
+        "countryCd": "US",
+        "latitude": 0,
+        "longitude": 0,
+        "timezonecd": "PST",
+        "phoneNmbr": "+1-209-123123",
+        "faxNmbr": "+1-209-123123"
+      },
+      "groups": [
+        {
+          "groupId": 1,
+          "label": "DemoGroup",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "DemoGroup"
+        },
+        {
+          "groupId": 4,
+          "label": "abcd",
+          "groupType": "ORDER_GROUP"
+        },
+        {
+          "groupId": 48,
+          "label": "SG250",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 49,
+          "label": "SG251",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 50,
+          "label": "SG252",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 51,
+          "label": "SG253",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 54,
+          "label": "SG256",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 55,
+          "label": "SG257",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 56,
+          "label": "SG258",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 57,
+          "label": "SG259",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        },
+        {
+          "groupId": 58,
+          "label": "SG260",
+          "groupType": "SCHEDULING_GROUP",
+          "description": "This is Scheduling Group"
+        }
+      ]
+    }
+  ]
+}

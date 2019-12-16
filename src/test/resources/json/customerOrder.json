@@ -1,0 +1,32 @@
+{
+  "message": "Operation was successful",
+  "status": "SUCCESS",
+  "custOrderId": 210,
+  "divisionId": ["30"],
+  "customerId": 6,
+  "srcOrderCreateTs": "2018-08-31T08:36:39.357",
+  "orderTypeId": 102,
+  "orderStatusId": 201,
+  "scheduledDeliveryDate": "2018-08-24",
+  "scheduledProcessDate": "2018-08-23",
+  "stopId": 0,
+  "routeId": 0,
+  "orderLines": [
+    {
+      "lineNbr": 556,
+      "orderLineStatusId": 251,
+      "productId": 1010044,
+      "orderedItemQty": 12,
+      "orderedItemUom": null,
+      "orderedItemWgt": null
+    },
+    {
+      "lineNbr": 557,
+      "orderLineStatusId": 251,
+      "productId": 70300444,
+      "orderedItemQty": 33,
+      "orderedItemUom": null,
+      "orderedItemWgt": null
+    }
+  ]
+}
