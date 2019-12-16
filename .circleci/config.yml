@@ -42,6 +42,9 @@ jobs:
       
       # Package in Jar
       - run: mvn clean package
+ 
+      # Install Package
+      - run: mv clean install
 
 orbs:
   sumologic: circleci/sumologic@1.0.2
