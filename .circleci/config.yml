@@ -42,3 +42,12 @@ jobs:
       
       # Package in Jar
       - run: mvn clean package
+
+orbs:
+  sumologic: circleci/sumologic@1.0.2
+workflows:
+#  version: 2.1
+  build_and_test:
+    jobs:
+      - sumologic/workflow-collector
+      - build
